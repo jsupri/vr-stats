@@ -119,7 +119,7 @@ if ($global:DefaultSrmServers){
 # Request credentials to connect to vCenter server (and SRM server).
 Write-Host "`n`nConnecting to vCenter Server $VIServer...`n`n"
 $username = "administrator@vsphere.local"
-$password = "enL@B22!"
+$password = "passwordhere"
 $secureStringPwd = $password | ConvertTo-SecureString -AsPlainText -Force 
 $Credential = New-Object System.Management.Automation.PSCredential -ArgumentList ($username, $secureStringPwd)
 
